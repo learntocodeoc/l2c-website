@@ -1,0 +1,31 @@
+{
+  "name": "l2c-website",
+  "version": "1.0.0",
+  "description": "Website for learntocode dev group",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/learntocodeoc/l2c-website.git"
+  },
+  "keywords": [
+    "javascript",
+    "js",
+    "node",
+    "express",
+    "mongo"
+  ],
+  "author": "learntocodeoc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/learntocodeoc/l2c-website/issues"
+  },
+  "homepage": "https://github.com/learntocodeoc/l2c-website#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "mongoose": "^4.1.11"
+  }
+}
