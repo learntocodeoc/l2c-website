@@ -1,0 +1,48 @@
+{
+	"orgName" : "Test Organization 1",
+	"webURL" : "www.google.com",
+	"primaryContact" : {
+		"firstName" : "Primary",
+		"lastName" : "Person",
+		"email" : "person@example.com",
+		"phone" : "123-456-7890"
+		},
+	"webContact" : {
+		"firstName" : "Webfirst",
+		"lastName" : "Weblast",
+		"email" : "webmaster@example.com",
+		"phone" : "123-456-7891"
+	},
+	"currentSite" : {
+		"host" : "GoDaddy.com",
+		"haveCredentials" : "true",
+		"dns" : "GoDaddy.com",
+		"cms" : "WordPress",
+		"ecommerce" : "true",
+		"notes" : "We have no idea how websites work or what any of this stuff you're asking means"
+	}
+}
+{
+	"orgName" : "Test Organization 2",
+	"webURL" : "www.google.com",
+	"primaryContact" : {
+		"firstName" : "Primary",
+		"lastName" : "Person",
+		"email" : "person@example.com",
+		"phone" : "123-456-7890"
+		},
+	"webContact" : {
+		"firstName" : "Webfirst",
+		"lastName" : "Weblast",
+		"email" : "webmaster@example.com",
+		"phone" : "123-456-7891"
+	},
+	"currentSite" : {
+		"host" : "GoDaddy.com",
+		"haveCredentials" : "true",
+		"dns" : "GoDaddy.com",
+		"cms" : "WordPress",
+		"ecommerce" : "true",
+		"notes" : "We have no idea how websites work or what any of this stuff you're asking means"
+	}
+}
