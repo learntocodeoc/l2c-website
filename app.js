@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+require('./routes/applicants.js')
 
 
 // Default home route
@@ -8,5 +9,5 @@ app.get('/', function(req, res){
 });
 
 // Start the application
-app.listen(3000);
-console.log('Listening on port 3000');
+app.listen(80);
+console.log('Application Server Listening on port 80');
