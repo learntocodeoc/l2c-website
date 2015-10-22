@@ -4,8 +4,8 @@ var app = express();
 var bodyParser = require('body-parser');
 var router = express.Router();
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({"extended" : false}));
+router.use(bodyParser.json());
+router.use(bodyParser.urlencoded({"extended" : false}));
 
 router.get('/', function(req, res) {
 	Applicant.find(function (err, applicants) {
@@ -26,6 +26,8 @@ router.post('/', function(req, res) {
 	res.json(applicant);
 });
 
-app.use('/applicants', router);
-app.listen(3000);
-console.log('API server listening on port 3000');
+module.exports = router;
+
+// app.use('/applicants', router);
+// app.listen(3000);
+// console.log('API server listening on port 3000');
