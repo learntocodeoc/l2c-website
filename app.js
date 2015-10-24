@@ -1,15 +1,11 @@
 var express = require('express');
 var app = express();
-var applicants = require('./routes/applicants.js')
+var applicants = require('./routes/applicants.js');
 
-
-// Default home route
-app.get('/', function(req, res){
-	res.send('default home directory');
-});
+app.use(express.static('public'));
 
 app.use('/applicants', applicants);
 
 // Start the application
-app.listen(80);
+app.listen(3000);
 console.log('Application Server Listening on port 80');
