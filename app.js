@@ -11,11 +11,11 @@ app.use('/', express.static(__dirname + '/public'));
 app.get('/', function(req, res){
 res.render('index');
 });
-=======
-app.use(express.static('public'));
+// =======
+// app.use(express.static('public'));
 
 app.use('/applicants', applicants);
->>>>>>> 3674b76501a6be59189c69a28d38dcea0f3e639f
+// >>>>>>> 3674b76501a6be59189c69a28d38dcea0f3e639f
 
 
 

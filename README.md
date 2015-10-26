@@ -14,7 +14,7 @@ This repository's .gitignore file is setup to ignore the node-modules folder. Th
 
 ````
 npm install
-```
+````
 
 You can now run the application by executing the following command from the root working directory:
 
