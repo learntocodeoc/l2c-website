@@ -25,7 +25,11 @@
   },
   "homepage": "https://github.com/learntocodeoc/l2c-website#readme",
   "dependencies": {
+<<<<<<< HEAD
     "bootstrap": "^3.3.5",
+=======
+    "body-parser": "^1.14.1",
+>>>>>>> 3674b76501a6be59189c69a28d38dcea0f3e639f
     "express": "^4.13.3",
     "mongoose": "^4.1.11"
   }
