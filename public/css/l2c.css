@@ -1,0 +1,39 @@
+
+.intro-image {
+    background-image: url('../img/Team.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 0px;
+    margin-bottom:100px;
+    min-height: 100%;
+    min-width: 100%;
+    color: #ff3;
+}
+
+.closing-image {
+    background-image: url('../img/Team2.jpg');
+    background-repeat: no-repeat;
+    bottom: 0px;
+    margin-top: 150px;
+    margin-bottom: 55px;
+    min-height: 200px;
+    min-width: 100%;
+    color: #ff3;
+}
+
+.closing-statement {
+    margin-top: 265px;
+}
+.mission-statement {
+    margin-top: 265px;
+    margin-bottom: 12px;
+}
+.text-column {
+    margin-top: 65px;
+    margin-bottom: 15px;
+}
+
+.image-column {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
