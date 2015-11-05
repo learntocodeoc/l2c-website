@@ -16,6 +16,6 @@ app.get('/form', function(req, res){
 })
 
 // Start the application
-app.listen(3001);
+app.listen(3000);
 console.log('Welcome to Learn To Code OC Server');
 console.log('Application Server Listening on port 3000');

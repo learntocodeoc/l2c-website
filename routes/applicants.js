@@ -1,4 +1,4 @@
-var Applicant = require('../models/applicants.js');
+var Applicant = require('../models/applicant.js');
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
@@ -9,14 +9,14 @@ router.use(bodyParser.urlencoded({"extended" : false}));
 
 router.get('/', function(req, res) {
 	Applicant.find(function (err, applicants) {
-	if (err) return console.error(err);	
+	if (err) return console.error(err);
 	res.send(applicants);
 	});
 });
 
 router.post('/', function(req, res) {
 	var applicant = new Applicant(req.body);
-	
+
 	applicant.save(function (err) {
 	if (err) return console.error(err);
 	console.log('applicant saved');

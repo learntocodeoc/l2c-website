@@ -15,7 +15,8 @@ $(document).ready(function(){
         var jsonObject = JSON.stringify($('#form1').serializeObject());
         $('#result').text(jsonObject);
         $.ajax({
-            type: "POST",
+            method: "POST",
+            contentType: "application/json",
             url: "/applicants",
             data: jsonObject,
             success: function(data){

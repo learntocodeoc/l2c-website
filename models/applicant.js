@@ -12,26 +12,12 @@ db.once('open', function() {
 var applicantSchema = mongoose.Schema({
 	orgName: String,
 	webUrl: String,
-	primaryContact: {
-		firstName: String,
-		lastName: String,
-		email: String,
-		phone: String
-	},
-	webContact: {
-		firstName: String,
-		lastName: String,
-		email: String,
-		phone: String
-	},
-	currentSite: {
-		host: String,
-		haveCredentials: String,
-		dns: String,
-		cms: String,
-		ecommerce: String,
-		notes: String
-	}	
+	firstName: String,
+	lastName: String,
+	email: String,
+	phone: String,
+  services: String,
+  comments: String
 });
 
 // compile Schema into a Model
