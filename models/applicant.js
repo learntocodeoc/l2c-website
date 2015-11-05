@@ -1,15 +1,8 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/l2c-website');
-
-// check for db connections success
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function() {
-	console.log('mongodb connected successfully');
-});
+var Schema = mongoose.Schema;
 
 // create applicant data schema
-var applicantSchema = mongoose.Schema({
+var applicantSchema = new Schema({
 	orgName: String,
 	webUrl: String,
 	firstName: String,
@@ -21,6 +14,4 @@ var applicantSchema = mongoose.Schema({
 });
 
 // compile Schema into a Model
-var Applicant = mongoose.model('Applicant', applicantSchema);
-
-module.exports = Applicant;
+module.exports = mongoose.model('Applicant', applicantSchema);
