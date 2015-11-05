@@ -1,0 +1,56 @@
+doctype html
+html(lang='en')
+    head
+    title Welcome to L2C Web
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+    link(rel='stylesheet', href='/css/l2c.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    script(type='text/javascript', src='js/form.js')
+body
+    nav(class='navbar navbar-inverse navbar-fixed-top')
+        div(class='container')
+            div(class='navbar-header')
+                button(type='button', class='navbar-toggle collapsed', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+                    span(class='sr-only') Toggle navigation
+                    span(class='icon-bar')
+                    span(class='icon-bar')
+                    span(class='icon-bar')
+            a(class='navbar-brand', href='/') L2C Web Masters
+            div(id='navbar', class='navbar-collapse collapse')
+                ul(class='nav navbar-nav')
+                    li(role='separator', class='divider')
+                    li(class='active')
+                        a(href='#') Mission Statement
+                    li
+                        a(href='#') Services
+                    li
+                        a(href='form') Application Form
+                    li
+                        a(href='#') Contact Us
+                ul(class='nav navbar-nav navbar-right')
+                    li
+                        a(href='tel:9515555555') Phone: (951) 555-5555
+                     li
+                        a(href='mailto:support@l2cwebmasters.com') Email: support@l2cwebmasters.com
+    block content
+    div(class='panel panel-footer')
+        div(class='container')
+            div(class='row')
+                div(class='col-lg-4')
+                    ul
+                        li
+                            a(href='tel:9515555555') (951-555-5555)
+                        li
+                            a(href='mailto:support@l2cwebmasters.com') support@l2cwebmasters.com
+                div(class='col-lg-4 col-center')
+                    ul
+                        li
+                            a(href='#') FAQ
+                        li
+                            a(href='#') How To
+                div(class='col-lg-4 col-center')
+                    ul
+                        li
+                            a(href='#') Team Members

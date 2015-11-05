@@ -1,0 +1,46 @@
+extend layout
+
+block content
+    #form_css.container
+      .panel.panel-primary.dialog-panel
+        .panel-body
+          form#form1.form-horizontal(method='post', role='form')
+            .form-group
+              label.control-label.col-md-2.col-md-offset-2 Contact Name
+              .col-md-8
+                .col-md-3
+                  .form-group.internal
+                    input.form-control.col-md-8(name='contactName', placeholder='First Name', type='text')
+                .col-md-4.indent-small.col-md-offset-1
+                  .form-group.internal
+                    input.form-control(name='contactLastName', placeholder='Last Name', type='text')
+            .form-group
+              label.control-label.col-md-2.col-md-offset-2 Contact
+              .col-md-6
+                .form-group
+                  .col-md-11
+                    input.form-control(name='contactEmail', placeholder='E-mail', type='text')
+                .form-group.internal
+                  .col-md-11
+                    input.form-control(name='contactNumber', placeholder='Phone: (xxx) - xxx xxxx', type='text')
+            .form-group
+              label.control-label.col-md-2.col-md-offset-2 Company
+              .col-md-6
+                .form-group
+                  .col-md-11
+                    input.form-control(name='companyName', placeholder='Company Name', type='text')
+                .form-group.internal
+                  .col-md-11
+                    input.form-control(name='companyUrl', placeholder='Company Website URL', type='text')
+            .form-group
+              label.control-label.col-md-2.col-md-offset-2 Comments
+              .col-md-6
+                textarea.form-control(name='comments', placeholder='Additional comments', rows='3')
+            .form-group
+              .col-md-offset-4.col-md-1
+                button#submitButton.btn-lg.btn-primary(type='submit') Submit
+              .col-md-3
+                button.btn-lg.btn-danger(style='float:right', type='reset') Reset
+      footer
+        pre#result.
+          \n           

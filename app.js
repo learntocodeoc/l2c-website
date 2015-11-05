@@ -11,7 +11,11 @@ app.get('/', function(req, res){
 res.render('index');
 });
 
+app.get('/form', function(req, res){
+  res.render('form');
+})
+
 // Start the application
-app.listen(3000);
+app.listen(3001);
 console.log('Welcome to Learn To Code OC Server');
 console.log('Application Server Listening on port 3000');
