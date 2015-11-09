@@ -1,5 +1,5 @@
 # l2c-website
-This is a website for non-profits who need web development services to apply for help from volunteer devlopers.
+This is a website for non-profits who need web development services to apply for help from volunteer developers.
 
 ## Using this repository
 We will be using a Feature Branch Workflow for this repository. A basic overview of this workflow is included below. You can find a more in-depth description at: https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
