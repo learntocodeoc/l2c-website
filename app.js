@@ -19,3 +19,5 @@ var port = 3000;
 app.listen(port);
 console.log('Welcome to Learn To Code OC Server');
 console.log('Application Server Listening on port ' + port);
+
+module.exports = app;
