@@ -1,3 +1,5 @@
+process.env.NODE_ENV = 'test';
+
 var mocha = require('mocha');
 var chai = require('chai');
 var chaiHttp = require('chai-http');
@@ -9,8 +11,8 @@ chai.use(chaiHttp);
 
 describe('/applicants', function() {
 
-  Applicant.collection.drop();
-
+  // Applicant.collection.drop();
+  // Hooks
   beforeEach(function(done) {
     var newApplicant = new Applicant({
       firstName: 'John',
@@ -26,14 +28,13 @@ describe('/applicants', function() {
       if(err) return done(err);
       done();
     });
-
   });
+  // afterEach(function(done) {
+  //   Applicant.collection.drop();
+  //   done();
+  // });
 
-  afterEach(function(done) {
-    Applicant.collection.drop();
-    done();
-  });
-
+  // Tests
   it('returns all applicants at /applicants GET', function(done) {
     chai.request(app)
       .get('/applicants')
@@ -48,7 +49,25 @@ describe('/applicants', function() {
       });
   });
 
-  it('Returns a single applicant at /applicants/:id GET');
+  it('Returns a single applicant at /applicants/:id GET', function(done) {
+    var newApplicant = new Applicant({
+      firstName: "Create",
+      lastName: "Test"
+    });
+    newApplicant.save(function(err, data) {
+      chai.request(app)
+        .get('/applicants/' + data.id)
+        .end(function(err, res) {
+          expect(err).to.be.null;
+          expect(res).to.have.status(200);
+          expect(res.body).to.be.a('object');
+          expect(res.body).to.have.property('_id');
+          expect(res.body).to.have.property('firstName');
+          expect(res.body.firstName).to.equal('Create');
+          done();
+        });
+    });
+  });
 
   it('Creates an applicant at /applicants/:id POST', function(done) {
     var newApplicant = new Applicant({
@@ -66,7 +85,7 @@ describe('/applicants', function() {
       .send(newApplicant)
       .end(function(err, res) {
         expect(res).to.have.status(200);
-        expect(res).to.be.json;        
+        expect(res).to.be.json;
         expect(res.body).to.be.a('object');
         done();
       });
