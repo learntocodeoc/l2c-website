@@ -1,3 +1,4 @@
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 // Imports
 var express = require('./config/express');
 var mongoose = require('./config/mongoose');

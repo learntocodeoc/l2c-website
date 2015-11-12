@@ -11,7 +11,7 @@ chai.use(chaiHttp);
 
 describe('/applicants', function() {
 
-  // Applicant.collection.drop();
+  Applicant.collection.drop();
   // Hooks
   beforeEach(function(done) {
     var newApplicant = new Applicant({
@@ -29,10 +29,10 @@ describe('/applicants', function() {
       done();
     });
   });
-  // afterEach(function(done) {
-  //   Applicant.collection.drop();
-  //   done();
-  // });
+  afterEach(function(done) {
+    Applicant.collection.drop();
+    done();
+  });
 
   // Tests
   it('returns all applicants at /applicants GET', function(done) {
