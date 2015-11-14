@@ -26,8 +26,13 @@
   "homepage": "https://github.com/learntocodeoc/l2c-website#readme",
   "dependencies": {
     "body-parser": "^1.14.1",
+    "chai": "^3.4.1",
+    "chai-http": "^1.0.0",
     "express": "^4.13.3",
-    "mongoose": "^4.1.11",
-    "jade": "~1.11.0"
+    "gulp": "^3.9.0",
+    "gulp-nodemon": "^2.0.4",
+    "jade": "~1.11.0",
+    "mocha": "^2.3.3",
+    "mongoose": "^4.1.11"
   }
 }
