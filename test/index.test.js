@@ -10,12 +10,11 @@ var app = require('../app');
 chai.use(chaiHttp);
 
 describe('/', function() {
-  describe('chai expect: #indexOf()', function() {
-    it('should return -1 when the value is not present', function() {
-      expect([1,2,3].indexOf(5)).to.equal(-1);
-      expect([1,2,3].indexOf(0)).to.equal(-1);
-    })
-  });
+  it('should return the homepage');
 });
-describe('/public');
-describe('/form');
+describe('/public', function() {
+  it('should return static assets');
+});
+describe('/apply', function() {
+  it('should return the application form')
+});
