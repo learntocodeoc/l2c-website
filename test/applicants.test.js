@@ -51,7 +51,7 @@ describe('/applicants', function() {
 
   it('Returns a single applicant at /applicants/:id GET', function(done) {
     var newApplicant = new Applicant({
-      firstName: "Create",
+      firstName: "Single",
       lastName: "Test"
     });
     newApplicant.save(function(err, data) {
@@ -63,7 +63,7 @@ describe('/applicants', function() {
           expect(res.body).to.be.a('object');
           expect(res.body).to.have.property('_id');
           expect(res.body).to.have.property('firstName');
-          expect(res.body.firstName).to.equal('Create');
+          expect(res.body.firstName).to.equal('Single');
           done();
         });
     });
@@ -87,6 +87,13 @@ describe('/applicants', function() {
         expect(res).to.have.status(200);
         expect(res).to.be.json;
         expect(res.body).to.be.a('object');
+        expect(res.body).to.have.property('_id');
+        expect(res.body).to.have.property('firstName');
+        expect(res.body.firstName).to.equal('New');
+        expect(res.body).to.have.property('email');
+        expect(res.body.email).to.equal('new@new.com');
+        expect(res.body).to.have.property('services');
+        expect(res.body.services).to.equal('I also need a website');
         done();
       });
   });
