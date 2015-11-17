@@ -10,8 +10,8 @@ app.get('/', function(req, res){
 res.render('index');
 });
 
-app.get('/form', function(req, res){
-  res.render('form');
+app.get('/apply', function(req, res){
+  res.render('apply');
 })
 
 // Start the application
