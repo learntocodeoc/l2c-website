@@ -38,6 +38,49 @@
     margin-bottom: 15px;
 }
 
+/*Form CSS */
+
 #form_css {
     padding-top: 65px;
 }
+
+#contact_label{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
+.error{
+    margin-left: 10px;
+    color: red;
+}
+
+.noError{
+    display: none;
+    margin-left: 10px;
+}
+
+input.invalid {
+    border: 2px solid red;
+}
+
+textarea.invalid{
+    border: 2px solid red;
+}
+
+
+/*Modal CSS */
+
+#modalText{
+    text-align: center;
+}
+
+#modalButton{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    top: 80%;
+    left: 80%;
+}
+
+

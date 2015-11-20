@@ -1,0 +1,72 @@
+extends layout
+
+block content
+  #form_css.container
+    .panel.panel-primary.dialog-panel
+      .panel-body
+        form#form1.form-horizontal(method='post', role='form')
+          .form-group
+            label.control-label.col-md-2.col-md-offset-2 Contact Name
+            .col-md-8
+              .col-md-3
+                .form-group.internal
+                  input.basicFields.form-control.col-md-8(name='firstName', placeholder='First Name', type='text', autocomplete="off")
+                  span.noError **Field is required
+              .col-md-4.indent-small.col-md-offset-1
+                .form-group.internal
+                  input.basicFields.form-control(name='lastName', placeholder='Last Name', type='text', autocomplete="off")
+                  span.noError **Field is required
+          .form-group
+            label.control-label.col-md-2.col-md-offset-2 Contact
+            .col-md-6
+              .form-group
+                .col-md-11
+                  input#contactEmail.form-control(name='email', placeholder='E-mail', type='email', autocomplete="off")
+                  span#emailError.noError **A valid email address is required
+              .form-group.internal
+                .col-md-11
+                  input#contactNumber.form-control(name='phone', placeholder='Phone: (xxx)-xxx-xxxx', type='text', autocomplete="off")
+                  span#numberError.noError **A valid phone number is required
+          .form-group
+            label.control-label.col-md-2.col-md-offset-2 Company
+            .col-md-6
+              .form-group
+                .col-md-11
+                  input.basicFields.form-control(name='orgName', placeholder='Company Name', type='text', autocomplete="off")
+                  span.noError **Company name is required
+              .form-group.internal
+                .col-md-11
+                  input#webUrl.form-control(name='webUrl', placeholder='Company Website URL', type='text', autocomplete="off") 
+                  span#webUrlError.noError **Company URL is required
+          .form-group
+            label.control-label.col-md-2.col-md-offset-2 What kind of services are you interested in?
+            .col-md-6
+              textarea.basicFields.form-control(name='services', placeholder='What do you need?', rows='4', autocomplete="off")
+              span.noError **Please let us know what services you're interested in.
+          .form-group
+            label.control-label.col-md-2.col-md-offset-2 Comments (Optional)
+            .col-md-6
+              textarea.optional.form-control(name='comments', placeholder='Additional comments', rows='3', autocomplete="off")
+          .form-group
+            .col-md-offset-4.col-md-1
+              button#submitButton.optional.btn-lg.btn-primary(type='submit') Submit
+            .col-md-3
+              button.optional.btn-lg.btn-danger(style='float:right', type='reset') Reset
+
+    footer
+      pre#result.
+        \n           
+
+  #myModal.modal.fade
+    .modal-dialog
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal', aria-hidden='true')
+          h4.modal-title Successful Submit!
+        .modal-body
+          p.modalText 
+            b Thank you for your interest in L2C Webmasters!
+          p.modalText 
+            b We will be in contact shortly.
+          img(src='img/CheckMark.jpg')
+          button#modalButton.btn.btn-primary(type='button', data-dismiss='modal') Close
