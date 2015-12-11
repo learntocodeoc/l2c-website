@@ -1,43 +1,3 @@
-
-.intro-image {
-    background-image: url('../img/Team.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin-top: 0px;
-    margin-bottom:100px;
-    min-height: 100%;
-    min-width: 100%;
-    color: #ff3;
-}
-
-.closing-image {
-    background-image: url('../img/Team2.jpg');
-    background-repeat: no-repeat;
-    bottom: 0px;
-    margin-top: 150px;
-    margin-bottom: 55px;
-    min-height: 200px;
-    min-width: 100%;
-    color: #ff3;
-}
-
-.closing-statement {
-    margin-top: 265px;
-}
-.mission-statement {
-    margin-top: 265px;
-    margin-bottom: 12px;
-}
-.text-column {
-    margin-top: 65px;
-    margin-bottom: 15px;
-}
-
-.image-column {
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
 /*Form CSS */
 
 #form_css {
@@ -84,3 +44,88 @@ textarea.invalid{
 }
 
 
+/*Inde CSS */
+
+.intro-image {
+    background-image: url('../img/Team.jpg');
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100%;
+    min-width: 100%;
+    color: white;
+}
+
+.closing-image {
+    background-image: url('../img/Team2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    bottom: 0px;
+    margin-top: 150px;
+    margin-bottom: 55px;
+    min-height: 200px;
+    min-width: 100%;
+    color: white;
+}
+
+.closing-statement {
+    margin-top: 265px;
+}
+.mission-statement {
+    margin-top: 265px;
+    margin-bottom: 12px;
+}
+.text-column {
+    margin-top: 65px;
+    margin-bottom: 15px;
+}
+
+.image-column {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.container_tp{
+}
+
+.data{
+    border: 0px solid black;
+}
+
+.menu{
+    display: none;
+}
+
+.menu2{
+    background-color: white;
+    margin-top: -50px;
+}
+
+.down-content {
+    background: white none repeat scroll 0 0;
+    position: relative;
+    z-index: 0;
+}
+
+.down-content-learn-more {
+    background: rgba(0, 0, 0, 0) url("//static2.montagebook.com/images/cells/taco-main/arrow-down.png") no-repeat scroll center bottom;
+    background-color: white;
+    color: #39444c;
+    font-size: 1.143em;
+    height: 30px;
+    margin-top: -10px;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 50%;
+    width: 100%;
+    border: 0px solid black;
+    z-index: 2;
+}
+
+.tp_img{
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px black;;
+    margin-top: -29px;
+}

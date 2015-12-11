@@ -7,31 +7,133 @@ block content
       h3(align='center') Mission Statement - We take ordinary web sites and turn them into masterpieces, a true work of art.
       p(align='center')
           a(class='btn btn-danger btn-lg', href='apply') Apply For Services
+  nav(class='navbar navbar-default menu2')
+    div(class='container')
+      div(class='navbar-header')
+        button(type='button', class='navbar-toggle collapsed', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+          span(class='sr-only') Toggle navigation
+          span(class='icon-bar')
+          span(class='icon-bar')
+          span(class='icon-bar')
+      a(class='navbar-brand', href='/') L2C Web Masters
+      div(id='navbar', class='navbar-collapse collapse')
+        ul(class='nav navbar-nav')
+          li(role='separator', class='divider')
+          li(class='active')
+            a(href='#') Mission Statement
+          li
+            a(href='#') Services
+          li
+            a(href='apply') Application Form
+          li
+            a(href='#') Contact Us
+        ul(class='nav navbar-nav navbar-right')
+          li
+            a(href='tel:9515555555') Phone: (951) 555-5555
+           li
+            a(href='mailto:support@l2cwebmasters.com') Email: support@l2cwebmasters.com
+  div(class='tp_img')
+    span .
+  div(class='down-content')
+    span
+        a(class="down-content-learn-more" href="#") Learn More
+  div(class='container container_tp')
+    div(class= 'data')
+      div(class='row')
+        div(class='col-lg-7 text-column')
+          h3(align='center') We take a complete look at your site for any potential issue or problems and offer solutions to solve them. From flexible platforms to custom applications, we build technology to enhance and simplify your business.
+        div(class='col-lg-5 image-column')
+          img(src='img/Redesign.png')
+      div(class='row')
+        div(class='col-lg-5 image-column')
+          img(src='img/ResponsiveWebDesign.png')
+        div(class='col-lg-7 text-column')
+          h3(align='center') Completely custom responsive modern web designs to fit to your requirements Since its groundbreaking release in 2011, Responsive Web Design remains a fundamental resource for anyone working on the web.
+      div(class='row')
+        div(class='col-xs-12 col-lg-8 text-column')
+          h3(align='center').
+            Now is the time to position your business for future success with L2C Optimized
+            Solutions. By understanding how information technology is changing, you can take
+            advantage of the innovations and implement the solutions that can help you keep
+            your current customers, attract new ones, and grow your bottom line.
+        div(class='col-lg-2 image-column')
+          img(src='img/Database.png')
+      div(class='row')
+        div(class='col-lg-4 image-column')
+          img(src='img/Marketing.png')
+        div(class='col-lg-8 text-column')
+          h3(align='center') At L2C Solutions, we're all about using our skills and resources to grow your business. We believe our clients are best served when we have only one agenda - help our clients achieve their goals.
   div(class='container')
     div(class='row')
-      div(class='col-lg-7 text-column')
-        h3(align='center') We take a complete look at your site for any potential issue or problems and offer solutions to solve them. From flexible platforms to custom applications, we build technology to enhance and simplify your business.
-      div(class='col-lg-5 image-column')
-        img(src='img/Redesign.png')
-    div(class='row')
-      div(class='col-lg-5 image-column')
-        img(src='img/ResponsiveWebDesign.png')
-      div(class='col-lg-7 text-column')
-        h3(align='center') Completely custom responsive modern web designs to fit to your requirements Since its groundbreaking release in 2011, Responsive Web Design remains a fundamental resource for anyone working on the web.
-    div(class='row')
-      div(class='col-xs-12 col-lg-8 text-column')
-        h3(align='center').
-          Now is the time to position your business for future success with L2C Optimized
-          Solutions. By understanding how information technology is changing, you can take
-          advantage of the innovations and implement the solutions that can help you keep
-          your current customers, attract new ones, and grow your bottom line.
-        div(class='col-lg-4 image-column')
-          img(src='img/Database.png')
-    div(class='row')
-      div(class='col-lg-4 image-column')
-        img(src='img/Marketing.png')
-      div(class='col-lg-8 text-column')
-        h3(align='center') At L2C Solutions, we're all about using our skills and resources to grow your business. We believe our clients are best served when we have only one agenda - help our clients achieve their goals.
+      #form_css.container
+        .panel.panel-primary.dialog-panel
+          .panel-body
+            form#form1.form-horizontal(method='post', role='form')
+              .form-group
+                label.control-label.col-md-2.col-md-offset-2 Contact Name
+                .col-md-8
+                  .col-md-3
+                    .form-group.internal
+                      input.basicFields.form-control.col-md-8(name='firstName', placeholder='First Name', type='text', autocomplete="off")
+                      span.noError **Field is required
+                  .col-md-4.indent-small.col-md-offset-1
+                    .form-group.internal
+                      input.basicFields.form-control(name='lastName', placeholder='Last Name', type='text', autocomplete="off")
+                      span.noError **Field is required
+              .form-group
+                label.control-label.col-md-2.col-md-offset-2 Contact
+                .col-md-6
+                  .form-group
+                    .col-md-11
+                      input#contactEmail.form-control(name='email', placeholder='E-mail', type='email', autocomplete="off")
+                      span#emailError.noError **A valid email address is required
+                  .form-group.internal
+                    .col-md-11
+                      input#contactNumber.form-control(name='phone', placeholder='Phone: (xxx)-xxx-xxxx', type='text', autocomplete="off")
+                      span#numberError.noError **A valid phone number is required
+              .form-group
+                label.control-label.col-md-2.col-md-offset-2 Company
+                .col-md-6
+                  .form-group
+                    .col-md-11
+                      input.basicFields.form-control(name='orgName', placeholder='Company Name', type='text', autocomplete="off")
+                      span.noError **Company name is required
+                  .form-group.internal
+                    .col-md-11
+                      input#webUrl.basicFields.form-control(name='webUrl', placeholder='Company Website URL', type='text', autocomplete="off") 
+                      span#webUrlError.noError **Company URL is required
+              .form-group
+                label.control-label.col-md-2.col-md-offset-2 What kind of services are you interested in?
+                .col-md-6
+                  textarea.basicFields.form-control(name='services', placeholder='What do you need?', rows='4', autocomplete="off")
+                  span.noError **Please let us know what services you're interested in.
+              .form-group
+                label.control-label.col-md-2.col-md-offset-2 Comments (Optional)
+                .col-md-6
+                  textarea.optional.form-control(name='comments', placeholder='Additional comments', rows='3', autocomplete="off")
+              .form-group
+                .col-md-offset-4.col-md-1
+                  button#submitButton.optional.btn-lg.btn-primary(type='submit') Submit
+                .col-md-3
+                  button.optional.btn-lg.btn-danger(style='float:right', type='reset') Reset
+
+    footer
+      pre#result.
+        \n           
+
+  #myModal.modal.fade
+    .modal-dialog
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal', aria-hidden='true')
+          h4.modal-title Successful Submit!
+        .modal-body
+          p.modalText 
+            b Thank you for your interest in L2C Webmasters!
+          p.modalText 
+            b We will be in contact shortly.
+          img(src='img/CheckMark.jpg')
+          button#modalButton.btn.btn-primary(type='button', data-dismiss='modal') Close
   div(class='jumbotron closing-image')
     div(class='container closing-statement')
       h3(align='center') Don't miss this opportunity get started now!
